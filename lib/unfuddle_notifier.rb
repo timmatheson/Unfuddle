@@ -4,7 +4,11 @@ class UnfuddleNotifier
   end
   
   def call(env)
+    @session = Unfuddle::Session.new
+    @project = Unfuddle::Project.find(20935)
+    @tickets = @project.tickets
     status, headers, response = @app.call(env)
-    [status, headers, "<div style='background-color: green;'>foobar</div>" + response.body]
+    [status, headers, "<div style='background-color: blue; color: white; font-weight: bold;'>
+      #{@project.title} has #{@tickets.size} tickets</div>" + response.body]
   end
 end
