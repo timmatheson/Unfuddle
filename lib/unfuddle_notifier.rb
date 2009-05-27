@@ -4,6 +4,7 @@ class UnfuddleNotifier
   end
   
   def call(env)
-    [200, {"Content-Type" => "text/html"}, "Hello from rack!"]
+    status, headers, response = @app.call(env)
+    [status, headers, "<div style='background-color: green;'>foobar</div>" + response.body]
   end
 end
