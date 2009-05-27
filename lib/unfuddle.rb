@@ -89,4 +89,4 @@ module Unfuddle
   class Ticket < ActiveResource::Base; end;
 end
 
-UnfuddleNotifier.extend(:include, Unfuddle)
+UnfuddleNotifier.include(Unfuddle)
