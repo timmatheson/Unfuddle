@@ -1,5 +1,5 @@
 class UnfuddleNotifier
-  TEMPLATE_PATH = File.dirname(__FILE__) + "/views"
+  TEMPLATE_PATH = File.dirname(__FILE__) + "/../views"
   
   def initialize(app)
     @app = app
