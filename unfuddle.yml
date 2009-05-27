@@ -2,6 +2,6 @@
 
 development:
   enabled: true
-  account: "YOUR_ACCOUNT"
-  username: "YOUR_USERNAME"
-  password: "YOUR_PASSWORD"
+  account: ""
+  username: ""
+  password: ""

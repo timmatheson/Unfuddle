@@ -43,6 +43,10 @@ module Unfuddle
   class Project < ActiveResource::Base
     self.prefix = "/projects/:id"
     
+    def tickets
+      puts self.title
+    end
+    
     def self.all
       find(:all, :from => "/projects.xml")
     end
@@ -51,4 +55,12 @@ module Unfuddle
   class Person < ActiveResource::Base
     self.prefix = "/people"
   end
+  
+  class Repository < ActiveResource::Base; end;
+  
+  class Message < ActiveResource::Base; end;
+  
+  class Notebook < ActiveResource::Base; end;
+  
+  class Ticket < ActiveResource::Base; end;
 end
