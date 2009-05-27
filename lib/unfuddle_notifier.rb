@@ -1,5 +1,5 @@
 class UnfuddleNotifier
-  require 'action_view'
+  include ERB::Utils
   
   def initialize(app)
     @app = app
@@ -7,6 +7,6 @@ class UnfuddleNotifier
   
   def call(env)
     status, headers, response = @app.call(env)
-    [status, headers, ActionView::Template.new("panel", "views").render + response.body]
+    [status, headers, ERB.new(File.read("../views/ui/panel.html.erb")) + response.body]
   end
 end
