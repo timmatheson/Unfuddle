@@ -1,0 +1,7 @@
+# Add you Unfuddle repository credentials here
+
+development:
+  enabled: true
+  account: "YOUR_ACCOUNT"
+  username: "YOUR_USERNAME"
+  password: "YOUR_PASSWORD"
