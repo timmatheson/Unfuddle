@@ -7,6 +7,6 @@ class UnfuddleNotifier
   
   def call(env)
     status, headers, response = @app.call(env)
-    [status, headers, ActionView::Template.render("panel", "views") + response.body]
+    [status, headers, ActionView::Template.new("panel", "views") + response.body]
   end
 end
