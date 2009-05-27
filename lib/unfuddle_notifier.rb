@@ -1,5 +1,5 @@
 class UnfuddleNotifier
-  def initailize(app)
+  def initialize(app)
     @app = app
   end
   
