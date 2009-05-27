@@ -4,6 +4,6 @@ class UnfuddleNotifier
   end
   
   def call
-    [200, {"Content-Type" => "text/html"}, "Hello from rack"]
+    [200, {"Content-Type" => "text/html"}, "Hello from rack!"]
   end
 end

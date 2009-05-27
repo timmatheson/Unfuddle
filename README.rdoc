@@ -1,1 +1,8 @@
-TODO:
+USAGE:
+  Add this to your config/environment.rb file inside the Initializer block
+  
+  Rails::Initializer.run do |config|  
+    config.middleware.use "UnfuddleNotifier"  
+  end
+  
+  # run the rake task to create the configuration files

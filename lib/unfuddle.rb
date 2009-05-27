@@ -1,6 +1,6 @@
 # Author: Tim Matheson
 # Website: http://www.timmatheson.com
-require 'ostruct'
+
 module Unfuddle
   class Session
     cattr_accessor :site
