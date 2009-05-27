@@ -5,7 +5,7 @@ class UnfuddleNotifier
   
   def call(env)
     @session = Unfuddle::Session.new
-    @project = Unfuddle::Project.find(20935)
+    @project = Unfuddle::Project.find(:one, :from => "/projects/20935")
     @tickets = @project.tickets
     status, headers, response = @app.call(env)
     [status, headers, "<div style='background-color: blue; color: white; font-weight: bold;'>
