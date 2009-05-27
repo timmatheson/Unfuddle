@@ -7,6 +7,6 @@ class UnfuddleNotifier
   
   def call(env)
     status, headers, response = @app.call(env)
-    [status, headers, File.readlines(File.join(TEMPLATE_PATH,"ui","panel.html.erb")) + response.body]
+    [status, headers, ERB.new(File.read("views/ui/panel.html.erb")).result + response.body]
   end
 end

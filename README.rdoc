@@ -1,3 +1,7 @@
+INTRODUCTION:
+  The Unfuddle GEM allows you to recieve notifications from your Unfuddle repository account.
+  To use it you simply need to create a config/unfuddle.yml file and add your credentials to it.
+
 USAGE:
   Add this to your config/environment.rb file inside the Initializer block
   
@@ -6,3 +10,4 @@ USAGE:
   end
   
   # run the rake task (rake unfuddle:setup) to create the configuration files 
+  

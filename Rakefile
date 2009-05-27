@@ -2,8 +2,8 @@
   require gem
 end
 
-Echoe.new('unfuddle','0.1.0') do |p|
-  p.description    = "Integrates your rails app with Unfuddle API"
+Echoe.new('unfuddle','0.1.1') do |p|
+  p.description    = "Integrates your rails app with Unfuddle API and Rack"
   p.url            = "http://www.timmatheson.com"
   p.author         = "Tim Matheson"
   p.email          = "me@timmatheson.com"
