@@ -1,3 +1,7 @@
+require 'rubygems'
+require 'rack'
+include Rack
+
 class UnfuddleNotifier
   TEMPLATE_PATH = File.dirname(__FILE__) + "/../views"
   
