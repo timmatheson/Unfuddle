@@ -1,6 +1,6 @@
 module Unfuddle
   class Project < ActiveResource::Base
-    self.prefix = "/projects"
+    #self.prefix = "/projects"
     
     def activity
     end
@@ -14,3 +14,4 @@ module Unfuddle
     end
   end
 end
+

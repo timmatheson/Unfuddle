@@ -1,0 +1,14 @@
+production:
+  uri: "http://YOURDOMAIN.unfuddle.com"
+  username: 
+  password: 
+  
+development:
+  uri: "http://YOURDOMAIN.unfuddle.com"
+  username: 
+  password: 
+  
+test:
+  uri: "http://YOURDOMAIN.unfuddle.com" 
+  username: 
+  password: 

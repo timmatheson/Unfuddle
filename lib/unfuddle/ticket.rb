@@ -1,7 +1,5 @@
 module Unfuddle
   class Ticket < ActiveResource::Base
-    def assignee_id
-      nil
-    end
+    self.prefix = "/tickets"
   end
 end
