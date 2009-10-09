@@ -1,11 +1,7 @@
 module Unfuddle
   class Project < ActiveResource::Base
-    #self.prefix = "/projects"
     
-    def activity
-    end
-    
-    def tickets(state = "all")
+    def tickets
       Ticket.find(:all, :from => "/projects/#{id}/tickets")
     end
     
@@ -14,4 +10,3 @@ module Unfuddle
     end
   end
 end
-
