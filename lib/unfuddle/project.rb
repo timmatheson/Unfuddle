@@ -1,6 +1,5 @@
 module Unfuddle
-  class Project < ActiveResource::Base
-    
+  class Project < ActiveResource::Base    
     def tickets
       Ticket.find(:all, :from => "/projects/#{id}/tickets")
     end
