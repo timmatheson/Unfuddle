@@ -1,6 +1,8 @@
 INTRODUCTION:
-  The Unfuddle GEM allows you to recieve notifications from your Unfuddle repository account.
-  To use it you simply need to create a config/unfuddle.yml file and add your credentials to it.
+  The Unfuddle gem is designed to make it easy to integrate Unfuddle into your project.
+  There are many uses for this gem if you are using Unfuddle for project management.
+  You could even hook this gem into your tests and create tickets when one test fails.
+  The possibilities are endless.
 
 USAGE:
   Add this to your config/environment.rb file inside the Initializer block
