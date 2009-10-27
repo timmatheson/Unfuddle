@@ -1,15 +1,3 @@
 INTRODUCTION:
-  The Unfuddle gem is designed to make it easy to integrate Unfuddle into your project.
-  There are many uses for this gem if you are using Unfuddle for project management.
-  You could even hook this gem into your tests and create tickets when one test fails.
-  The possibilities are endless.
-
-USAGE:
-  Add this to your config/environment.rb file inside the Initializer block
-  
-  Rails::Initializer.run do |config|  
-    config.middleware.use "UnfuddleNotifier"  
-  end
-  
-  # run the rake task (rake unfuddle:setup) to create the configuration files 
+Unfuddle API, RubyGem
   
